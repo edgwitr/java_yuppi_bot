@@ -29,8 +29,8 @@ botのトークンです。
 - TEST_SERVER_ID
 テストに使用するサーバーのIDです。
 以下の手順で取得できます。
-1. User Settingsをクリック
-1. Advancedのセクションに移動
-1. Developer Modeをオンにする
-1. サーバアイコンを右クリックする
-1. Copy Server IDをクリックする
+  1. User Settingsをクリック
+  1. Advancedのセクションに移動
+  1. Developer Modeをオンにする
+  1. サーバアイコンを右クリックする
+  1. Copy Server IDをクリックする
