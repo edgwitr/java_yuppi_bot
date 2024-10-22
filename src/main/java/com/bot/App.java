@@ -39,6 +39,7 @@ public class App extends ListenerAdapter {
             App main = new App();
             main.registerCommand(new Ping());
             main.registerCommand(new Say());
+            main.registerCommand(new YuhiFace());
             List<SlashCommandData> cmds = main.commands.values().stream().map(SlashCommand::getCommandData).toList();
 
             String id = dotenv.get("TEST_SERVER_ID");
@@ -68,6 +69,10 @@ public class App extends ListenerAdapter {
         if (message.equals("!hello")) {
             event.getChannel().sendMessage("おはこんばんちわ").queue();
             event.getMessage().reply("んちゃ☆")
+                    .mentionRepliedUser(false)
+                    .queue();
+        } else if (message.equals("ぬるぽ")) {
+            event.getMessage().reply("ｶﾞｯ")
                     .mentionRepliedUser(false)
                     .queue();
         }
