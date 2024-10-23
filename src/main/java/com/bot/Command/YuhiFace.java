@@ -20,12 +20,11 @@ public class YuhiFace implements SlashCommand {
     @Override
     public void execute(SlashCommandInteractionEvent event) {
         String content = event.getOption("content").getAsString();
-        event.reply("""
+        String target = """
                 ```
                 ┌-----------------┐
                 |                 |
-                | """ + content + """
-                |
+                |      %s
                 |                 |
                 └--------v--------┘
                      ＿＿＿＿
@@ -34,8 +33,8 @@ public class YuhiFace implements SlashCommand {
                 くL | ´・ヮ・`　|＞
                 　L_|`ーーーーヒ」
                 ```
-
-                                """).queue();
+                """.formatted(content);
+        event.reply(target).queue();
     }
 
 }
