@@ -39,6 +39,7 @@ public class App extends ListenerAdapter {
             App main = new App();
             main.registerCommand(new Ping());
             main.registerCommand(new Say());
+            main.registerCommand(new Tori());
             main.registerCommand(new YuhiFace());
             List<SlashCommandData> cmds = main.commands.values().stream().map(SlashCommand::getCommandData).toList();
 
