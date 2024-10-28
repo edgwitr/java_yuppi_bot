@@ -70,7 +70,7 @@ public class App extends ListenerAdapter {
         if (message.equals("!hello")) {
             event.getChannel().sendMessage("おはこんばんちわ").queue();
             event.getMessage().reply("んちゃ☆")
-                    .mentionRepliedUser(false)
+                    .mentionRepliedUser(true)
                     .queue();
         } else if (message.equals("ぬるぽ")) {
             event.getMessage().reply("ｶﾞｯ")
